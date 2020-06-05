@@ -38,7 +38,7 @@ async def upload_as_document(client, message):
                 reply_to_message_id=message.message_id,
                 progress=progress_for_pyrogram,
                 progress_args=(
-                    "trying to upload", status_message, c_time
+                    "Ok Boss I am trying to upload it here", status_message, c_time
                 )
             )
             end_t = datetime.now()
@@ -74,7 +74,7 @@ async def upload_as_video(client, message):
                 reply_to_message_id=message.message_id,
                 progress=progress_for_pyrogram,
                 progress_args=(
-                    "trying to upload", status_message, c_time
+                    "Ok Boss me trying to upload", status_message, c_time
                 )
             )
             end_t = datetime.now()
@@ -106,13 +106,13 @@ async def upload_as_photo(client, message):
                 reply_to_message_id=message.message_id,
                 progress=progress_for_pyrogram,
                 progress_args=(
-                    "trying to upload", status_message, c_time
+                    "trying to upload Sir !!", status_message, c_time
                 )
             )
             end_t = datetime.now()
             ms = (end_t - start_t).seconds
             await status_message.edit(f"Uploaded in {ms} seconds")
         else:
-            await status_message.edit("404: media not found")
+            await status_message.edit("404: media not found Sir Please try again")
     else:
         await status_message.edit(f"<code>{COMMAND_HAND_LER}uploadasphoto FILE_PATH</code> to upload to current Telegram chat")
