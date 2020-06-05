@@ -12,10 +12,10 @@ from pyrobot import (
 
 
 # -- Constants -- #
-ALIVE = "ചത്തിട്ടില്ലാ..."
+ALIVE = "Yes Sir Always At Your Help... \nMy All Fiction Are Normal \nThanks For Asking ⚡"
 HELP = "CAADAgAD6AkAAowucAABsFGHedLEzeUWBA"
 REPO = ("User / Bot is available on GitHub:\n"
-        "https://github.com/SpEcHiDe/PyroGramUserBot")
+        "Sorry! Boss - Mr.SpecDie is Pro")
 # -- Constants End -- #
 
 
