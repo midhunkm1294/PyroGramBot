@@ -35,7 +35,7 @@ async def down_load_media(client, sms):
             file_name=download_location,
             progress=progress_for_pyrogram,
             progress_args=(
-                "trying to download", message, c_time
+                "Yes boss ! I am trying to download", message, c_time
             )
         )
         end_t = datetime.now()
@@ -88,6 +88,6 @@ async def down_load_media(client, sms):
         if os.path.exists(download_file_path):
             end_t = datetime.now()
             ms = (end_t - start_t).seconds
-            await message.edit(f"Downloaded to <code>{download_file_path}</code> in <u>{ms}</u> seconds")
+            await message.edit(f"Boss i Have Downloaded it to <code>{download_file_path}</code> in <u>{ms}</u> seconds")
     else:
-        await message.edit("Reply to a Telegram Media, to download it to local server.")
+        await message.edit("Boss Please Reply to a Telegram Media, to download it to my local server.")
